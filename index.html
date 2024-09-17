@@ -1,0 +1,179 @@
+index.html
+
+<!DOCTYPE html>     <!--versão do html-->     
+<!--para quebrar linha: alt + Z-->
+
+<html>
+    <head>  <!--meta dados. Não aparecem para o usuario apnas informaçoes para o navegador-->
+            <title>Quiz para programadores</title>
+            <meta name="description" content="Quiz interativo para testar seus conhecimentos"><!--Descrição-->
+        </head>
+    
+    <body>  <!--informaçoes que aprecerão para o uuário-->
+            <header><!--Cabeçalho--> 
+                <h1>Quiz interativo para programadores</h1> <!--Título-->
+                <p>Teste seus conheimentos em programação e veja qual pontuação você vai conquistar!</p><!--Descrição-->
+            </header>
+            <main><!--Corpo-->
+                <section> <!--Introdução-->     <!--strong: deixa em negrito-->   
+                    <p><strong>Este qui</strong> foi desenvolvido para testar seus conhecimentos em programação, como linguagens de
+                         programação, conceitos básicos e mais. É uma ótima oportunidade para avaliar o quanto 
+                         você sabe e identificar áreas para melhorar.</p>
+                    <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas
+                         de data. <br>Desafie-se com este quiz e veja como você se sai em cada categoria. Cada pergunta
+                          foi cuidadosamente elaborada para cobrir uma ampla gama de tópicos.</p>
+                    <p>Você poderá encontrar alguns acrônimos como <abbr title="HyperText Makup Language">HTML</abbr>
+                         e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em 
+                         questões relacionadas ao desenvolvimento web. <em>Esses 
+                            termos são fundamentais para qualquer
+                          programador que deseja se especializar na criação de sites e aplicações web.</em></p>
+                </section>           <!--br: quebra linha-->                <!--em: muda a fonte-->
+                
+                <section> <!--Pergunta 1: Multipla escolha-->
+                    <h2>Qual linguagem é usada para estruturar páginas web?</h2>
+                    <form>
+                        <input type="radio" value="Python" id="p1a" name="Pergunta 1" 
+                        <label for="p1a">Python</label><br>  <!--"radio": Multipla escolha-->
+                        <input type="radio" value="HTML" id="p1b" name="Pergunta 1" 
+                        <label for="p1a">HTML</label><br>
+                        <input type="radio" value="Javascript" id="p1c" name="Pergunta 1" 
+                        <label for="p1a">Javascript</label><br>
+                        <input type="radio" value="Java" id="p1d" name="Pergunta 1" 
+                        <label for="p1a">Java</label>
+                    </form>
+
+                </section>
+
+                <section> <!--Pergunta 2: Texto-->
+                    <h2>Na URL https://www.google.com o trecho "google.com" é o ______</h2>
+                <form> 
+                    <input type="text" id="p2" name="Pergunta 2" placeholder="Digite aqui...">
+                </form>
+
+                    
+
+                </section>
+
+                <section> <!--Pergunta 3: senha-->
+                <h2>Dê um exemplo de senha forte.</h2>
+                <form>
+                    <input type="password" id="p3" name="Pergunta 3" placeholder="Digite uma senha...">
+                </form>
+                
+                </section>
+
+                <section> <!--Pergunta 4: data-->
+                    <h2>Em que ano o HTML foi lançado?</h2>
+                        <input type="date" id= "p4" name = "Pergunta 4">
+
+                </section>
+
+                <section> <!--Pergunta 5: seleção multiplas-->
+                    <h2>Quais dessas tecnologias são considerada linguagens de programação?</h2>
+                    <form>
+                        <input type="checkbox" id="p5a" name="Prgunta 5" value="Javascript">
+                        <label for="p5a">Javascript</label><br> <!--checkbox: selecona mais de uma alternativa-->
+                        <input type="checkbox" id="p5b" name="Prgunta 5" value="HTML">
+                        <label for="p5b">HTML</label><br>
+                        <input type="checkbox" id="p5c" name="Prgunta 5" value="Java">
+                        <label for="p5c">Java</label><br>
+                        <input type="checkbox" id="p5d" name="Prgunta 5" value="CSS">
+                        <label for="p5d">CSS</label>
+                    </form>
+
+                </section>
+
+                <section> <!--Pergunta 6: upload de arquivo-->
+                    <h2>Faça o upload de um arquivo contendo código HTML</h2>
+                    <form >
+                        <input type="file" id="p6" name="Pergunta 6">
+                    </form>
+                </section>
+
+                <section> <!--Pergunta 7: menu suspenso-->
+                    <h2>Selecione o atributo do input que atribute o seu tipo.</h2>
+                    <form>
+                        <select name="Pergunta 7" id="p7"> 
+                            <option value="id">id</option>
+                            <option value="type">type</option>
+                            <option value="placeholder">placeholder</option>
+                            <option value="name">name</option>
+                        </select>
+                    </form>
+                </section>
+                
+                
+                <section> <!--Pergunta 8: imagem-->
+                    <h2>Qual linguagem de programação é respresentada pelo logo a seguir?</h2>
+                    <figure><img src="./226777.png" alt="logotipo de uma linguagem de programação que é uma chicara saindo fumaça">
+                        <figcaption>figura: 1</figcaption> 
+                        </figure> <!--img: colocar imagem     figure: possibilita colocar mais atributoas a imagem como por exemplo o figcaption que coloca uma legenda abaixo da imagem, normalmente ultilizda para colocar a fonte da imagem-->
+                        <input type="text" id="p8" name="Pergunta 8" placeholder="Digite sua resposta...">
+                    
+                </section>
+            
+                <section> <!--Tabela de pontuação-->
+                    <h2>Tabela de Pontução</h2>
+                    <table border="1">   <!--Table: criando uma tabela, border: destaque das linhas-->
+                        <thead> <!--Cabeçalho-->
+                            <th>Pontução</th>
+                            <th>Avaliação</th>
+                        </thead>
+                        <tbody>
+                        <tr> <!--tr: linha-->   <!--td: o que será escrito -->
+                            <td>0-2</td> <td>Não desista! Cada tentativa é uma oportunidade de aprender mais</td>
+                        <tr>
+                            <td>3-4</td><td>Você ainda precisa melhorar. Que tal estudar mais sobre programação?</td>
+                        <tr>
+                            <td>5-7</td><td>Bom! Seu conhecimento em programação está satisfatório</td>
+                        
+                        <tr>
+                            <td>8</td><td>Parabéns! Você sabe muito sobre programação</td>
+                        <tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                  <!--colspan: define o número de colunas que o texto aparecerá-->
+                                <td colspan="2"> Boa sorte na próxima! Independente da nota sempre busque melhorar</td>
+                                
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <section> <!--lista de respostas-->
+                    <h2>Verifique suas respostas</h2>
+                    <details> <!--Esconde uma parte-->
+                    <summary>Clique aqui para visualizar as respostas</summary> <!--Texto que ficará do lado da seta que esconde-->
+                    <ol> <!--Cria uma lista numerada-->
+                        <li>HTML</li> <li>Domínio</li> <li>Exemplo de senha: AB21o@11/10</li> <li>1991</li> 
+                        <li>Javascript e Java</li> <li>Arquivo deve ter extensão HTML</li> <li>type</li> <li>Java</li>
+                    </ol>
+                </details>
+                </section>
+                <section> <!--Formulário de Feedback-->
+                    <h2>Nos dê o seu Feedback--</h2>
+                    <form>
+                        <fieldset>
+                        <legend>Informações para contato</legend>  <!--É criado junto com o fieldset-->
+                        <label for="name">Nome:</label>
+                        <input type="text" id="nome" name="nome"> <br>
+                        
+                        <label for="email">Email::</label>
+                        <input type="email" id="email" name="email"> <br>
+                        
+                        <label for="comentários">Comentários:</label> <br> 
+                        <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite aqui seus comentários..."></textarea><br>
+                        <button onclick="alert('Feedback enviado!')">Envie seu Feedback</button> <!--button: cria um botão. onclick alert: Dá um aviso apos clicar no botão-->
+                    </fieldset> <!--textarea: Um imput só que maio. rows e cols: configurar o tamanho do input. fieldset: Separar o formulario de Feedbac-->
+                    </form>   
+                </section>
+                
+
+
+            </main>
+            <footer><!--Rodapé-->
+                <p>&copy; Quiz de Programadores. Todos os direitos reservados</p> <!--a href: colocar um "clique aqui que levara a um site"-->
+                <p>Para conhecer mais sobre mim <a href="sobremim.html" target="_blanck"> clique aqui.</a></p>
+            </footer> <!--target: em conjunto com o a href ao invé de ele abrir o site na aba do site que o usuario está ele abre uma nova aba-->
+    </body>
+</html>
